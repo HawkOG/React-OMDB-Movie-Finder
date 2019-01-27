@@ -1,0 +1,79 @@
+// DEFAULT UNITS (rem)
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700,900&subset=latin-ext');
+html{
+  font-size:62.5%;
+}
+
+
+body{
+  font-family:'Nunito';
+  font-size:$m-size;
+  background:$blue;
+}
+.movie_title{
+  margin-top:2em;
+}
+
+.navBar{
+  color:#fff;
+  background:rgba(0,0,0,0.5);
+  box-shadow:0 0 5px #000;
+}
+button{
+  cursor: pointer;
+}
+
+button:disabled{
+  cursor: default;
+}
+
+.bold{
+  font-weight:bold;
+}
+
+.black{
+  font-weight:900;
+}
+
+.justify{
+  text-align:justify;
+}
+.searchbar{
+  background:rgba(0,0,0,0.5);  
+  border:none;
+  border-radius:0;
+  transition:250ms all;
+  border-bottom:3px solid darken($dark-blue, 10%);
+  height:50px;
+  font-size:1.3em;
+  &:focus{
+  background:rgba(0,0,0,0.5);    
+    color:#fff;
+  }
+}
+
+.xs{
+  width:500px; 
+  margin:0 auto;
+}
+
+.xl{
+  font-size:$m-size;
+}
+
+.searchbtn{
+background: lighten(#333745, 10%);
+border-bottom:3px solid darken($dark-blue, 10%);
+border-radius:0;
+width:50px;
+}
+
+.searchbar::placeholder{
+  color:darken(#fff,20%);
+  font: size 1.2em;
+}
+
+
+.bg_content{
+  background:rgba(0,0,0,0.9);
+}
